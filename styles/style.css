@@ -1,0 +1,29 @@
+.container{
+  margin: auto 20px;
+}
+
+.header_flex {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+}
+
+.header_menue{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+  text-transform: capitalize;
+  color: #A6A6A6;
+}
+
+.header_menue:last-child {
+  color: black;
+}
+
+.header_trait{
+  border: 1px solid #A6BDCA;
+}
+
