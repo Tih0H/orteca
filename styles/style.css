@@ -1,5 +1,6 @@
 .container{
-  margin: auto 20px;
+  width: 1200px;
+  margin: auto;
 }
 
 .header_flex {
@@ -29,29 +30,37 @@
 .products_slider{
   height: 100%;
   font-size: 15px;
+  position: relative;
+}
+
+.products_title {
+  margin: 24px auto 36px 14px;
 }
 
 .swiper{
-  width: 1000px;
-  height: 100%;
+  width: 1176px;
+  height: 163px;
 }
 .swiper-slide{
   text-align: center;
   font-size: 18px;
-  background-color: aliceblue;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .swiper-slide img{
-  width: 58%;
+  /* width: 58%; */
   object-fit: cover;
 }
 .swiper-button-next, .swiper-rtl .swiper-button-prev{
-  right: 140px !important; 
+  right: 0 !important; 
+  margin: 0 !important;
   left: auto;
+  --swiper-navigation-size: 15px;
 }
 .swiper-button-prev, .swiper-rtl .swiper-button-next{
-  left: 140px !important; 
+  left: 0 !important; 
+  margin: 0 !important;
   right: auto;
+  --swiper-navigation-size: 15px;
 }
