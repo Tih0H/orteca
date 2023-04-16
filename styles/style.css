@@ -64,3 +64,17 @@
   right: auto;
   --swiper-navigation-size: 15px;
 }
+
+.products_main {
+  display: flex;
+}
+
+.products_filters_price_title {
+  display: flex;
+}
+
+
+
+.products_filters_type_title {
+  display: flex;
+}
