@@ -72,16 +72,43 @@
 .products_filters_price_title, .products_filters_type_title {
   display: flex;
   justify-content: space-between;
+  padding: 20px 1px;
+  align-items: center;
+}
+
+.products_filters_price_title img, .products_filters_type_title img {
+  width: 10px;
+  height: 5px;  
+}
+
+.products_filters_title{
+  margin: 0;
 }
 
 .products_filter_price {
   border: 1px solid #A6A6A6;
   border-radius: 6px;
+  padding-right: 7px;
 }
 
+.products_filter_price_select {
+  border: none;
+  background-color: #fff;
+  margin: 2px;
+  padding: 8px 8px 8px 14px;
+  color: #A6A6A6;
+}
 
+option{ 
+  background: #FFFFFF;
+  box-shadow: 0px 8px 15px rgba(1, 130, 140, 0.12);
+  border-radius: 6px;
+}
 
-
+select.decorated option:hover{
+  background-color: #009AA6 !important;
+  color: #FFFFFF !important;
+} 
 
 .products_cards {
   display: flex;
@@ -91,4 +118,9 @@
 
 .product_card {
   width: 256px;
+}
+
+.products_filter_type_flex {
+  display: flex;
+  justify-content: space-between;
 }

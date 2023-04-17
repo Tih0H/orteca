@@ -12,7 +12,7 @@
   href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
 />
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
   <header class="header">
@@ -43,27 +43,44 @@
         <form class="products_filters" method="post" action="#">
           <div class="products_filters_price_title">
             <p class="products_filters_title">Стоимость</p>
-            <p>&and;</p>
+            <img src="images/Polygon 3.png" alt="">
           </div>
           <div class="products_filter_price">
-            <select name="prise filter">
-              <option value="1" selected>Выберите параметр</option>
-              <option value="2">Стоимость до 2 700 ₽ </option>
+            <select class="products_filter_price_select" name="prise filter">
+              <option value="1" selected disabled>Выберите параметр</option>
+              <option value="2">Стоимость до 2 700 ₽</option>
               <option value="3">Со скидкой</option>
             </select>
           </div>
           <div class="products_filters_type_title">
             <p class="products_filters_title">Вид изделия</p>
-            <p>&and;</p> 
+            <img src="images/Polygon 3.png" alt="">
           </div> 
           <div class="products_filter_type">
-            <p><input type="checkbox" name="option1" value="a1" id="type1"><label for="type1">Кроссовки</label><Br> 
-              <input type="checkbox" name="option2" value="a2" id="type2"><label for="type2">Ботинки</label><Br> 
-              <input type="checkbox" name="option3" value="a3" id="type3"><label for="type3">Полуботинки</label><Br> 
-              <input type="checkbox" name="option4" value="a4" id="type4"><label for="type4">Босоножки</label><Br> 
-              <input type="checkbox" name="option4" value="a5" id="type5"><label for="type5">Сабо</label><Br> 
-              <input type="checkbox" name="option5" value="a6" id="type6"><label for="type6">Сапоги</label> 
-            </p>
+            <div class="products_filter_type_flex"><p><input type="checkbox" name="option1" value="a1" id="type1">
+              <label for="type1">Кроссовки</label></p>
+               <p>1</p>
+            </div>
+            <div class="products_filter_type_flex"><p><input type="checkbox" name="option2" value="a2" id="type2">
+              <label for="type2">Ботинки</label></p> 
+              <p>1</p>
+            </div>
+            <div class="products_filter_type_flex"><p><input type="checkbox" name="option3" value="a3" id="type3">
+              <label for="type3">Полуботинки</label></p> 
+              <p>1</p>
+            </div>
+            <div class="products_filter_type_flex"><p><input type="checkbox" name="option4" value="a4" id="type4">
+              <label for="type4">Босоножки</label></p> 
+              <p>0</p>
+            </div>
+            <div class="products_filter_type_flex"><p><input type="checkbox" name="option4" value="a5" id="type5">
+              <label for="type5">Сабо</label></p> 
+              <p>0</p>
+            </div>
+            <div class="products_filter_type_flex"><p><input type="checkbox" name="option5" value="a6" id="type6">
+              <label for="type6">Сапоги</label></p> 
+              <p>1</p>
+            </div>
           </div>
           <input type="reset" value="Сбросить фильтр">
         </form>
@@ -155,5 +172,6 @@
     
   </section>
   <script src="js/script.js"></script>
+
 </body>
 </html>
