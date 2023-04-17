@@ -125,7 +125,7 @@
               </svg>
               <p class="product_reviews_title">2</p>
             </div>
-            <button class="product_buy">КУПИТЬ</button>
+            <button class="product_buy" id="button-order">КУПИТЬ</button>
           </div>
           <div class="product_card">
             <img src="images/white sneaker.jpg" alt="white sneaker">
@@ -160,7 +160,7 @@
               </svg>
               <p class="product_reviews_title">2</p>
             </div>
-            <button class="product_buy">КУПИТЬ</button>
+            <button class="product_buy" id="button-order">КУПИТЬ</button>
           </div>
           <div class="product_card">
             <img src="images/high boots.jpg" alt="high boots">
@@ -195,7 +195,7 @@
               </svg>
               <p class="product_reviews_title">2</p>
             </div>
-            <button class="product_buy">КУПИТЬ</button>
+            <button class="product_buy" id="button-order">КУПИТЬ</button>
           </div>
           <div class="product_card">
             <img src="images/boots.jpg" alt="boots">
@@ -230,13 +230,28 @@
               </svg>
               <p class="product_reviews_title">2</p>
             </div>
-            <button class="product_buy">КУПИТЬ</button>
+            <button class="product_buy" id="button-order">КУПИТЬ</button>
           </div>
         </div>
       </div>
     </div>
     
   </section>
+
+  <div class="modal" id="modal-order">
+    <div class="modal-dialog">
+      <div class="modal_top">
+        <button class="modal-dialog__close" id="close-order"><img src="images/icon-back.png" alt=""></button>
+        <h4 class="modal-dialog__title">ВОЙТИ</h4>
+        <button class="modal-dialog__close" id="close-order_x"><img src="images/icon-close.png" alt=""></button>
+      </div>
+        <form class="form order__form" id="order-button" action="#" method="POST">
+            <input type="text" name="username" class="main__input"  placeholder="Логин">
+            <input type="tel" name="phone" class="main__input phone"  placeholder="Пароль ">
+            <button type="submit" class="button private__button">ВОЙТИ</button>
+        </form>
+    </div>
+</div>
   <script src="js/script.js"></script>
 
 </body>

@@ -11,3 +11,13 @@ var swiper = new Swiper(".mySwiper", {
   keyboard: true,
 });
 
+
+document.getElementById('button-order').onclick = function() {
+  document.getElementById('modal-order').classList.add('modal_active');
+}
+document.getElementById('close-order_x').onclick = function() {
+  document.getElementById('modal-order').classList.remove('modal_active');
+}
+document.getElementById('close-order').onclick = function() {
+  document.getElementById('modal-order').classList.remove('modal_active');
+}
