@@ -1,3 +1,7 @@
+p{
+  margin: 0;
+}
+
 .container{
   width: 1200px;
   margin: auto;
@@ -31,6 +35,7 @@
   height: 100%;
   font-size: 15px;
   position: relative;
+  margin-bottom: 24px;
 }
 
 .products_title {
@@ -113,6 +118,7 @@ select.decorated option:hover{
 .products_filter_type_flex {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 16px;
 }
 
 .custom-checkbox {
@@ -176,17 +182,119 @@ select.decorated option:hover{
   border-radius: 6px;
   border: none;
   color: #FFFFFF;
+  margin-top: 16px;
 }
 
-
+.none {
+  display: none;
+}
 
 .products_cards {
   display: flex;
   flex-wrap: wrap;
   gap: 56px;
   justify-content: center;
+  justify-content: flex-start;
+  margin-left: 67px;
 }
 
 .product_card {
   width: 256px;
+}
+
+.product_special_offer {
+  text-align: center;
+  margin: 0;
+  background: #FFF1E6;
+  border-radius: 24px;
+  color:   #FF6E00;
+}
+
+.product_offer{
+  display: flex;
+  justify-content: space-between;
+  height: 20px;
+  margin-bottom: 7px;
+}
+
+.product_special_new{
+  color: #FF6E00;
+  background: #FFFFFF;
+  border: 1px solid #FF6E00;
+  border-radius: 25.7656px;
+  margin: 0;
+  padding: 2px 8px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.product_special_half{
+  margin: 0;
+  width: 46px;
+  color: #FDFDFD;
+  background: #FF6E00;
+  border-radius: 25.7656px;
+  padding: 3px 7px;
+  text-align: center;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.product_special_offer_play{
+  border: 2px solid #56B4BB;
+  border-radius: 50%;
+  padding: 4px;
+}
+
+.product_price{
+  display: flex;
+  gap: 6px;
+  align-items: flex-end;
+  margin-bottom: 8px;
+}
+
+.product_main_price{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 20px;
+  color: #1C1C1C;
+}
+
+.product_old_price{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 15px;
+  color: #A6A6A6;
+  text-decoration-line: line-through;
+}
+
+.product_title{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  color: #1C1C1C;
+}
+
+.product_reviews{
+  display: flex;
+  gap: 6px;
+  margin: 11px 0;
+}
+
+.product_reviews_title {
+  margin-right: 7px;
+}
+
+.product_buy{
+  background: #FF6E00;
+  border-radius: 4px;
+  color: #FFFFFF;
+  border: none;
+  padding: 11px 100px;  
+}
+
+.product_buy:hover {
+  background: #FF580E;
 }
