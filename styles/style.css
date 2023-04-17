@@ -95,7 +95,9 @@ p{
   border-radius: 6px;
   padding-right: 7px;
 }
-
+.products_filter_price:hover {
+  cursor: pointer;
+}
 .products_filter_price_select {
   border: none;
   background-color: #fff;
@@ -184,7 +186,9 @@ select.decorated option:hover{
   color: #FFFFFF;
   margin-top: 16px;
 }
-
+.products_filter_reset:hover{
+  cursor: pointer;
+}
 .none {
   display: none;
 }
@@ -297,6 +301,7 @@ select.decorated option:hover{
 
 .product_buy:hover {
   background: #FF580E;
+  cursor: pointer;
 }
 
 .modal {
@@ -366,6 +371,9 @@ select.decorated option:hover{
   border-radius: 6px;
   color: white;
   border: none;
+}
+.private__button:hover {
+  cursor: pointer;
 }
 .order__form{
   display: flex;
