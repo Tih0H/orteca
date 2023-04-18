@@ -31,71 +31,83 @@
       <div class="products_slider">
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="images/slide1.png"></div>
-            <div class="swiper-slide"><img src="images/slide2.png"></div>
-            <div class="swiper-slide"><img src="images/git.jpg"></div>
+            <div class="swiper-slide slide1"></div>
+            <div class="swiper-slide slide2"></div>
+            <div class="swiper-slide slide3"></div>
+            <!-- <img src="images/slide1.png">
+            <img src="images/slide2.png">
+            <img src="images/git.jpg"> -->
           </div>
         </div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
       </div>
       <div class="products_main">
-        <form class="products_filters" method="post" action="#">
-          <div class="products_filters_price_title">
-            <p class="products_filters_title">Стоимость</p>
-            <img src="images/Polygon 3.png" alt="">
-          </div>
-          <div class="products_filter_price">
-            <select class="products_filter_price_select" name="prise filter">
-              <option value="1" selected disabled>Выберите параметр</option>
-              <option value="2">Стоимость до 2 700 ₽</option>
-              <option value="3">Со скидкой</option>
-            </select>
-          </div>
-          <div class="products_filters_type_title">
-            <p class="products_filters_title">Вид изделия</p>
-            <img src="images/Polygon 3.png" alt="">
-          </div> 
-          <div class="products_filter_type">
-            <div class="products_filter_type_flex">
-              <p><input type="checkbox" name="option1" value="a1" id="type1" class="custom-checkbox">
-              <label for="type1">Кроссовки</label></p>
-               <p class="products_filter_quantity">1</p>
+        <div class="products_filters_adaptive">
+          <button class="products_filters_adaptive_btn">ФИЛЬТРЫ</button>
+          <form class="products_filters" method="post" action="#">
+            <div class="products_filters_top">
+              <button class="modal-dialog__close filters_btn" id="filters_btn">СБРОСИТЬ</button>
+              <h2 class="products_filters_top_title">ФИЛЬТР</h2>
+              <button class="modal-dialog__close filters_btn" id="filters_btn_X"><img src="images/icon-close.png" alt=""></button>
             </div>
-            <div class="products_filter_type_flex">
-              <p><input type="checkbox" name="option2" value="a2" id="type2" class="custom-checkbox">
-              <label for="type2">Ботинки</label></p> 
-              <p class="products_filter_quantity">1</p>
+            <div class="products_filters_price_title">
+              <p class="products_filters_title">Стоимость</p>
+              <img src="images/Polygon 3.png" alt="">
+              
             </div>
-            <div class="products_filter_type_flex">
-              <p><input type="checkbox" name="option3" value="a3" id="type3" class="custom-checkbox">
-              <label for="type3">Полуботинки</label></p> 
-              <p class="products_filter_quantity">1</p>
+            <div class="products_filter_price">
+              <select class="products_filter_price_select" name="prise filter">
+                <option value="1" selected disabled>Выберите параметр</option>
+                <option value="2">Стоимость до 2 700 ₽</option>
+                <option value="3">Со скидкой</option>
+              </select>
             </div>
-            <div class="products_filter_type_flex">
-              <p><input type="checkbox" name="option4" value="a4" id="type4" class="custom-checkbox">
-              <label for="type4">Босоножки</label></p> 
-              <p class="products_filter_quantity">0</p>
+            <div class="products_filters_type_title">
+              <p class="products_filters_title">Вид изделия</p>
+              <img src="images/Polygon 3.png" alt="">
+            </div> 
+            <div class="products_filter_type">
+              <div class="products_filter_type_flex">
+                <p><input type="checkbox" name="option1" value="a1" id="type1" class="custom-checkbox">
+                <label for="type1">Кроссовки</label></p>
+                <p class="products_filter_quantity">1</p>
+              </div>
+              <div class="products_filter_type_flex">
+                <p><input type="checkbox" name="option2" value="a2" id="type2" class="custom-checkbox">
+                <label for="type2">Ботинки</label></p> 
+                <p class="products_filter_quantity">1</p>
+              </div>
+              <div class="products_filter_type_flex">
+                <p><input type="checkbox" name="option3" value="a3" id="type3" class="custom-checkbox">
+                <label for="type3">Полуботинки</label></p> 
+                <p class="products_filter_quantity">1</p>
+              </div>
+              <div class="products_filter_type_flex">
+                <p><input type="checkbox" name="option4" value="a4" id="type4" class="custom-checkbox">
+                <label for="type4">Босоножки</label></p> 
+                <p class="products_filter_quantity">0</p>
+              </div>
+              <div class="products_filter_type_flex">
+                <p><input type="checkbox" name="option4" value="a5" id="type5" class="custom-checkbox">
+                <label for="type5">Сабо</label></p> 
+                <p class="products_filter_quantity">0</p>
+              </div>
+              <div class="products_filter_type_flex">
+                <p><input type="checkbox" name="option5" value="a6" id="type6" class="custom-checkbox">
+                <label for="type6">Сапоги</label></p> 
+                <p class="products_filter_quantity">1</p>
+              </div>
             </div>
-            <div class="products_filter_type_flex">
-              <p><input type="checkbox" name="option4" value="a5" id="type5" class="custom-checkbox">
-              <label for="type5">Сабо</label></p> 
-              <p class="products_filter_quantity">0</p>
-            </div>
-            <div class="products_filter_type_flex">
-              <p><input type="checkbox" name="option5" value="a6" id="type6" class="custom-checkbox">
-              <label for="type6">Сапоги</label></p> 
-              <p class="products_filter_quantity">1</p>
-            </div>
-          </div>
-          <input class="products_filter_reset" type="reset" value="СБРОСИТЬ ФИЛЬТР">
-        </form>
+            <input class="products_filter_reset" type="reset" value="СБРОСИТЬ ФИЛЬТР">
+          </form>
+        </div>
         <div class="products_cards">
 
           <div class="product_card">
             <img src="images/red sneaker.jpg" alt="red sneaker">
             <div class="product_special_offers">
-              <div style="height: 18px;"><p class="product_special_offer none">-50% на вторую пару</p></div>
+              <div class="product_special_offer_style"><p class="product_special_offer none">-50% на вторую пару</p></div>
               
               <div class="product_offer">
                 <div>
@@ -130,9 +142,9 @@
           <div class="product_card">
             <img src="images/white sneaker.jpg" alt="white sneaker">
             <div class="product_special_offers">
-              <div style="height: 18px;"><p class="product_special_offer">-50% на вторую пару</p></div>
+              <div class="product_special_offer_style"><p class="product_special_offer">-50% на вторую пару</p></div>
               
-              <div class="product_offer">
+              <div class="product_offer none">
                 <div>
                   <p class="product_special_new none">новинка</p>
                   <p class="product_special_half none">−50%</p>
@@ -149,7 +161,7 @@
               <p class="product_old_price none">2 990 ₽</p>
             </div>
             
-            <p class="product_title">Женские ортопедические полуботинки WALDLAUFER</p>
+            <p class="product_title">Женские ортопедические кроссовки WALDLAUFER Hiroko-364041</p>
             <div class="product_reviews">
               <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M6.5387 1.02818C6.71478 0.633173 7.27544 0.633173 7.45151 1.02818L8.8104 4.07671C8.88302 4.23963 9.03697 4.35148 9.21436 4.3702L12.5336 4.72053C12.9637 4.76592 13.1369 5.29915 12.8157 5.58867L10.3363 7.82309C10.2038 7.9425 10.145 8.12349 10.182 8.29797L10.8745 11.563C10.9642 11.9861 10.5106 12.3156 10.136 12.0996L7.24477 10.432C7.09026 10.3429 6.89996 10.3429 6.74545 10.432L3.8542 12.0996C3.47958 12.3156 3.02599 11.9861 3.11572 11.563L3.80825 8.29797C3.84526 8.12348 3.78645 7.9425 3.65395 7.82309L1.17454 5.58867C0.853277 5.29915 1.02653 4.76592 1.45661 4.72053L4.77586 4.3702C4.95324 4.35148 5.1072 4.23963 5.17982 4.07671L6.5387 1.02818Z" fill="#FFB800" stroke="#FFB800" stroke-width="0.999388"/>
@@ -165,14 +177,14 @@
           <div class="product_card">
             <img src="images/high boots.jpg" alt="high boots">
             <div class="product_special_offers">
-              <div style="height: 18px;"><p class="product_special_offer none">-50% на вторую пару</p></div>
+              <div class="product_special_offer_style"><p class="product_special_offer none">-50% на вторую пару</p></div>
               
               <div class="product_offer">
                 <div>
                   <p class="product_special_new none">новинка</p>
                   <p class="product_special_half ">−50%</p>
                 </div>
-                <div class="#">
+                <div class="product_special_half_img">
                   <img src="images/snowflake.svg" alt="snowflake">
                   <img class="product_special_offer_play" src="images/play/Polygon 5.svg" alt="play">
                 </div>               
@@ -184,7 +196,7 @@
               <p class="product_old_price none">2 990 ₽</p>
             </div>
             
-            <p class="product_title">Женские ортопедические полуботинки WALDLAUFER</p>
+            <p class="product_title">Женские ортопедические сапоги BERKEMANN Allegra-stretch</p>
             <div class="product_reviews">
               <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M6.5387 1.02818C6.71478 0.633173 7.27544 0.633173 7.45151 1.02818L8.8104 4.07671C8.88302 4.23963 9.03697 4.35148 9.21436 4.3702L12.5336 4.72053C12.9637 4.76592 13.1369 5.29915 12.8157 5.58867L10.3363 7.82309C10.2038 7.9425 10.145 8.12349 10.182 8.29797L10.8745 11.563C10.9642 11.9861 10.5106 12.3156 10.136 12.0996L7.24477 10.432C7.09026 10.3429 6.89996 10.3429 6.74545 10.432L3.8542 12.0996C3.47958 12.3156 3.02599 11.9861 3.11572 11.563L3.80825 8.29797C3.84526 8.12348 3.78645 7.9425 3.65395 7.82309L1.17454 5.58867C0.853277 5.29915 1.02653 4.76592 1.45661 4.72053L4.77586 4.3702C4.95324 4.35148 5.1072 4.23963 5.17982 4.07671L6.5387 1.02818Z" fill="#FFB800" stroke="#FFB800" stroke-width="0.999388"/>
@@ -200,7 +212,7 @@
           <div class="product_card">
             <img src="images/boots.jpg" alt="boots">
             <div class="product_special_offers">
-              <div style="height: 18px;"><p class="product_special_offer none">-50% на вторую пару</p></div>
+              <div class="product_special_offer_style"><p class="product_special_offer none">-50% на вторую пару</p></div>
               
               <div class="product_offer">
                 <div>
@@ -219,7 +231,7 @@
               <p class="product_old_price none">2 990 ₽</p>
             </div>
             
-            <p class="product_title">Женские ортопедические полуботинки WALDLAUFER</p>
+            <p class="product_title">Женские ортопедические ботинки WALDLAUFER K-Jenny-661803</p>
             <div class="product_reviews">
               <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M6.5387 1.02818C6.71478 0.633173 7.27544 0.633173 7.45151 1.02818L8.8104 4.07671C8.88302 4.23963 9.03697 4.35148 9.21436 4.3702L12.5336 4.72053C12.9637 4.76592 13.1369 5.29915 12.8157 5.58867L10.3363 7.82309C10.2038 7.9425 10.145 8.12349 10.182 8.29797L10.8745 11.563C10.9642 11.9861 10.5106 12.3156 10.136 12.0996L7.24477 10.432C7.09026 10.3429 6.89996 10.3429 6.74545 10.432L3.8542 12.0996C3.47958 12.3156 3.02599 11.9861 3.11572 11.563L3.80825 8.29797C3.84526 8.12348 3.78645 7.9425 3.65395 7.82309L1.17454 5.58867C0.853277 5.29915 1.02653 4.76592 1.45661 4.72053L4.77586 4.3702C4.95324 4.35148 5.1072 4.23963 5.17982 4.07671L6.5387 1.02818Z" fill="#FFB800" stroke="#FFB800" stroke-width="0.999388"/>
